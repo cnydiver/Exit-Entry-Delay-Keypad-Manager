@@ -31,7 +31,7 @@ preferences {
     page(name: "setupArmedAway")
     page(name: "setupArmedStay")
     page(name: "setupSimSensors")
-	page(name: "setupDelays")
+page(name: "setupDelays")
     page(name: "setupNotifications")
     page(name: "setupRoutines")
 }
@@ -41,12 +41,12 @@ def mainMenu(){  //Main menu page linking to other pages with preferences
         href(name: "introduction", title: "Introduction", description: "", required: true, page: "introduction")
         href(name: "setupDelays", title: "Exit & Entry Delays", description: "", required: false, page: "setupDelays")
         href(name: "setupArmedAway", title: "Armed(Away) Sensors", description: "", required: false, page: "setupArmedAway")
-		href(name: "setupArmedStay", title: "Armed(Home) Sensors", description: "", required: false, page: "setupArmedStay")
+	href(name: "setupArmedStay", title: "Armed(Home) Sensors", description: "", required: false, page: "setupArmedStay")
         href(name: "setupSimSensors", title: "Simulated Sensors", description: "", required: false, page: "setupSimSensors")
-		href(name: "setupKeypads", title: "Keypads and Pins", description: "", required: false, page: "setupKeypads")
+	href(name: "setupKeypads", title: "Keypads and Pins", description: "", required: false, page: "setupKeypads")
         href(name: "setupNotifications", title: "Notification Preferences", description: "", required: false, page: "setupNotifications")        
-		//href(name: "setupRoutines", title: "Routines", required: false, page: "setupRoutines")
-		}
+	//href(name: "setupRoutines", title: "Routines", required: false, page: "setupRoutines")
+	}
     }
 }
 def introduction(){
@@ -56,7 +56,7 @@ def introduction(){
 			}    	
         section (title: "Exit & Entry Delays", hideable: true, hidden: true) {
             paragraph "This smartapp adds the ability to setup Exit and Entry Delays for Smart Home Monitor. "+ 
-			"Exit Delay gives you an amount of time to exit your home after Smart Home Monitor is armed without triggering an intrusion alarm. "+
+	"Exit Delay gives you an amount of time to exit your home after Smart Home Monitor is armed without triggering an intrusion alarm. "+
 			"Entry Delay gives you an amount of time to enter your home and disarm Smart Home Monitor without triggering an intrusion alert. \n\n"+ 
             "Additionally, this smartapp will prevent motion sensors from triggering an intrusion alert during Exit and Entry delays. "+
             "This ensures a false alarm is not triggered if a motion sensor's detection area is near an exit/entry door or keypad. \n\n"+
